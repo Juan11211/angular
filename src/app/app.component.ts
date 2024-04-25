@@ -9,5 +9,20 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-app';
+  // courseTitle = 'First Angular App';
+
+  data = { 
+    title: 'First Angular App'
+  }
+
+  onLogoClicked(){
+    alert('HELLO WORLD')
+  }
+  
+  onKeyUp(newTitle: string){
+
+      this.data.title = newTitle; 
+  }
 }
+
+
